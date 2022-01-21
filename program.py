@@ -36,7 +36,7 @@ def main():
 
 def onMotion(value):
   if value:
-    subprocess.call("xset dpms force on", shell=True)
+    subprocess.call("DISPLAY=:0 xset dpms force on", shell=True)
     print('Turn monitor on')
 
 
